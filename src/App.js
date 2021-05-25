@@ -39,7 +39,7 @@ const items = [
 const App = () => {
 
     const [selected, setSelected] = useState(options[0]);
-    const [showDropdown, setShowDropdown] = useState(true);
+    // const [showDropdown, setShowDropdown] = useState(true);
 
     return (
                 <div> 
@@ -51,7 +51,7 @@ const App = () => {
                         <Search/>
                     </Route>
                     <Route path="/dropdown" >
-                    <Dropdown title={'Select a Color'} visibile={showDropdown} options={options} onSelectedChange={setSelected} selected={selected}/>
+                    <Dropdown title={'Select a Color'} visibile={true} options={options} onSelectedChange={setSelected} selected={selected}/>
                     </Route>
                     <Route path="/translate" >
                         <Translate />
